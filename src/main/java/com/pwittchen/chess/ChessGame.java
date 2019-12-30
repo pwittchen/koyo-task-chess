@@ -7,7 +7,7 @@ import com.pwittchen.chess.model.Square;
 
 public class ChessGame implements Game {
 
-  private Board board;
+  private final Board board;
   private final Player whitePlayer;
   private final Player blackPlayer;
 
