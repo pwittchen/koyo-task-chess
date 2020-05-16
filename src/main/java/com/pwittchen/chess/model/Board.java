@@ -70,8 +70,7 @@ public class Board {
     }
 
     boolean notCapturingPieceOfTheSameColor = !capturedPieceOfTheSameColor(to, activePlayer);
-    boolean moveIsAllowedForPiece =
-        board.get(from).get().canMove(from, to, board);
+    boolean moveIsAllowedForPiece = board.get(from).get().canMove(from, to, board);
     boolean movingToAnotherPosition = !from.equals(to);
     return notCapturingPieceOfTheSameColor && moveIsAllowedForPiece && movingToAnotherPosition;
   }
